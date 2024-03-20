@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Distraction Detection System</title>
+    <link rel="stylesheet" type="text/css" href="ProjectCPV.css">
+</head>
+
+<body>
+    <div class="mainTitle">Distraction Detection System</div>
+
+    <div class="container">
+        <div class="subTitleForVideo">Video here:</div>
+        <div class="subTitleForNotification">Notification:</div>
+    </div>
+
+    <div class="container">
+        <div id="videoContainer">
+            <video id="videoPlayer" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button class="buttonStart" onclick="startDetection()">Start</button>
+        <div class="notification-box" id="notificationBox"></div>
+    </div>
+
+    <input class="buttonChoose" type="file" id="videoUpload" accept="video/*">
+
+    <!-- Sử dụng nút để kích hoạt việc chọn và tải lên video -->
+    <button class="buttonUpload" onclick="uploadVideo()">Upload</button>
+    <!-- Sử dụng nút để xóa video -->
+    <button class="buttonDelete" onclick="deleteVideo()">Delete</button>
+    <!-- Sử dụng nút để Download thông báo về máy -->
+    <button class="buttonDownload" onclick="downloadNotifications()">Download</button>
+
+    <script src="ProjectCPV.js"></script>
+</body>
+
+</html>
